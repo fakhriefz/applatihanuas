@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
@@ -40,6 +41,15 @@
                   <option value="{{ $user->id }}">{{ $user->username }}</option>
                   @endforeach
                 </select>
+            </div>
+            <label for="exampleInputEmail1" class="form-label">Jenis</label>
+            <div>
+            <input type="radio" id="berita" name="jenis" value="Berita"> 
+            <label for="berita">Berita</label>
+             <input type="radio" id="tutorial" name="jenis" value="Tutorial">
+             <label for="tutorial">Tutorial</label>
+              <input type="radio" id="blog" name="jenis" value="Blog">
+            <label for="blog">Blog</label>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Artikel</label>
